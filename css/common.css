@@ -1,0 +1,95 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: monospace;
+}
+a{
+    cursor: pointer;
+}
+header {
+    height: 8%;
+    width: 100%;
+    background-color: #7E587E;
+    font-size: 24px;
+    display: table;
+    color: white;
+}
+header span {
+    /* selects the span elements inside header */
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+footer {
+    height: 10%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 37%;
+    text-align: center;
+    border-top: 2px solid gray;
+    text-decoration-color: gray;
+}
+#main {
+    width: 100%;
+    height: 100%;
+    /*background-image: url(../images/bg.png);*/
+    background-color: #f8f8f8;
+}
+::-webkit-input-placeholder {
+    /* Styling all the placeholders for input tag for Chrome and safari browsers */
+    font-style: italic;
+    font-size: 14px;
+    font-family: monospace;
+}
+
+/* Start popup: This section is added into common as it used in multiple places, to create popup.*/
+#popup {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    display: none;
+}
+#popupContent {
+    height: 100%;
+    width: 40%;
+    margin: 0 30%;
+    background-color: white;
+}
+#popupForm>span {
+    display: block;
+    margin: 2% 30%;
+    font-size: 18px;
+    font-style: bold;
+}
+#popupForm ul {
+    list-style-type: none;
+}
+li>input {
+    border: 1px solid #696969;
+    border-radius: 3px;
+    padding: 6px 4px;
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-family: monospace;
+}
+#popupForm>button {
+    margin-left: 21%;
+}
+#imgDiv{
+    height: 8%;
+    width: 5%;
+    position: absolute;
+    top: 0.5%;
+    right: 24.8%;
+    cursor: pointer;
+    background-color: white;
+}
+#imgDiv>img {
+    height: 100%;
+    width: 100%;
+}
