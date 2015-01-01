@@ -4,25 +4,28 @@
 <head>
     <title>AllTrack Management Suite</title>
     <link rel="stylesheet" type="text/css" href="css/common.css">
-    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
 </head>
 
 <body>
     <div id="main">
         <header>
-            <span>ALLTRACK MANAGEMENT SUITE </span>
+            <span>ALLTRACK MANAGEMENT SUITE</span>
         </header>
-        <section id="login">
-            <input type="text" placeholder="Username" class="loginInput">
-            <input type="password" placeholder="Password" class="loginInput">
-            <button id="loginReset">RESET</button>
-            <button id="loginSubmit">SUBMIT</button>
-            <a id="forgot">Forgot Password</a>
-            <a id="register">Register</a>
+        <div id="optionsZone">
+            <a class="home_link">Logout</a>
+            <a class="home_link">Create defect</a>
+        </div>
+        <section id="home">
+            <nav>
+                <a id="users">Users |</a>
+                <a id="organizations">Organizations |</a>
+                <a id="projects">Projects |</a>
+                <a id="categories">Categories |</a>
+                <a id="priorities">Priorities |</a>
+                <a id="statuses">Statuses</a>
+            </nav>
         </section>
-        <footer>
-            <span>&copy;copyright DTMS 2014-2015. All Rights Reserved</span>
-        </footer>
     </div>
     <!-- TODO: May be in the future Need to check if popup and popupcontent can be merged into one.-->
     <div id="popup">
@@ -31,13 +34,13 @@
                 <span>ALLTRACK MANAGEMENT SUITE</span>
             </header>
             <section id="popupForm">
-                <span>Registration Form</span>
+                <span>Loging a defect</span>
                 <ul>
                     <li>
-                        <input type="text" placeholder="Name" class="popupInput">
+                        <input type="text" placeholder="Title" class="popupInput">
                     </li>
                     <li>
-                        <input type="email" placeholder="Email" class="popupInput" required >
+                        <input type="textarea" placeholder="Email" class="popupInput" required >
                     </li>
                     <li>
                         <input type="phone" placeholder="Phone" class="popupInput">
@@ -60,7 +63,7 @@
         </div>
     </div>
     <script type="text/javascript" src="js/util.js"></script>
-    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
 </body>
 
 </html>
