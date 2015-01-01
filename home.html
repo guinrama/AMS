@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AllTrack Management Suite</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+</head>
+
+<body>
+    <div id="main">
+        <header>
+            <span>ALLTRACK MANAGEMENT SUITE</span>
+        </header>
+        <div id="optionsZone">
+            <a class="home_link">Logout</a>
+            <a class="home_link">Create defect</a>
+        </div>
+        <section id="home">
+            <nav>
+                <a id="users">Users |</a>
+                <a id="organizations">Organizations |</a>
+                <a id="projects">Projects |</a>
+                <a id="categories">Categories |</a>
+                <a id="priorities">Priorities |</a>
+                <a id="statuses">Statuses</a>
+            </nav>
+        </section>
+    </div>
+    <!-- TODO: May be in the future Need to check if popup and popupcontent can be merged into one.-->
+    <div id="popup">
+        <div id="popupContent"> 
+            <header>
+                <span>ALLTRACK MANAGEMENT SUITE</span>
+            </header>
+            <section id="popupForm">
+                <span>Loging a defect</span>
+                <ul>
+                    <li>
+                        <input type="text" placeholder="Title" class="popupInput">
+                    </li>
+                    <li>
+                        <input type="textarea" placeholder="Email" class="popupInput" required >
+                    </li>
+                    <li>
+                        <input type="phone" placeholder="Phone" class="popupInput">
+                    </li>
+                    <li>
+                        <input type="text" placeholder="Username" class="popupInput">
+                    </li>
+                    <li>
+                        <input type="password" placeholder="Password" class="popupInput">
+                    </li>
+                    <li>
+                        <input type="password" placeholder="Confirm Password" class="popupInput">
+                    </li>
+                </ul>
+                <button id="submit_popup">Submit</button>
+                <div id="imgDiv">
+                    <img src="images/close.png" id="closeBtn">
+                </div>
+            </section>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+</body>
+
+</html>
