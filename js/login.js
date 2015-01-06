@@ -16,7 +16,7 @@ var login = {
             }
         }
 
-        util.sendRequest(param, _loginCallBack);
+        util.sendPostRequest(param, _loginCallBack);
     },
     addLoginEvent: function() {
         var loginBtn = document.getElementById("loginSubmit");
@@ -77,7 +77,7 @@ var login = {
             }
         }
 
-        util.sendRequest(param, _registerCallBack);
+        util.sendPostRequest(param, _registerCallBack);
     },
     addRegisterEvent: function() {
         var popup = document.getElementById("popup");
