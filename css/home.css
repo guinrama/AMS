@@ -24,3 +24,14 @@
 #optionsZone a:nth-child(2){
     right: 5%;
 }
+table{
+    width: 90%;
+    margin: auto;
+    height: 40%;
+    overflow: auto;
+    text-align: center;
+    margin-top: 2%;
+}
+table,td,th{
+    border: 1px solid green;
+}
