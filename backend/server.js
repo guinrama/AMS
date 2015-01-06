@@ -61,8 +61,8 @@ var httpServer = http.createServer(function(req, res) {
             var _contentData_ = JSON.parse(content);
 
             if (_inputData_ && _inputData_["category"] === "login") {
-                if(_contentData_[_inputData_["uname"]]){
-                    if(_contentData_[_inputData_["uname"]]["pass"] === _inputData_["pass"]){
+                if(_contentData_["secure"][_inputData_["uname"]]){
+                    if(_contentData_["secure"][_inputData_["uname"]]["pass"] === _inputData_["pass"]){
                         sucessFlag = true;
                     } else {
                         sucessFlag = false;
@@ -79,6 +79,15 @@ var httpServer = http.createServer(function(req, res) {
             } else if (_inputData_ && _inputData_["category"] === "register") {
                 var _updatedData = JSON.stringify(serverApp.processdata(_contentData_, _inputData_));
                 fs.writeFileSync(path.resolve('data.json'), _updatedData);
+            } else if(_inputData_ && _inputData_["category"] === "users"){
+                var usersData = _contentData_["users"];
+                res.end(JSON.stringify(usersData));
+            } else if(_inputData_ && _inputData_["category"] === "clients"){
+                var clientsData = _contentData_["clients"];
+                res.end(JSON.stringify(clientsData));
+            } else if(_inputData_ && _inputData_["category"] === "projects"){
+                var projectsData = _contentData_["projects"];
+                res.end(JSON.stringify(projectsData));
             }
 
         });
