@@ -1,20 +1,119 @@
 {
-    "admin": {
-        "uname": "admin",
-        "pass": "admin"
+    "users": {
+        "ramaguin": {
+            "name": "Ramananda Guin",
+            "email": "rama.guin@gmail.com",
+            "phone": "9030771092",
+            "id": "KH1789",
+            "uname": "ramaguin",
+            "client": "KonyLabs",
+            "project": "viz",
+            "type": "Normal",
+            "creationdate": "01.01.2015",
+            "lastlogin": "01.01.2015",
+            "assigneddefects": "DEF121,DEF127",
+            "closeddefects": "DEF156,DEF178"
+        },
+        "deepak": {
+            "name": "Deepak Jenamani",
+            "email": "dipu@gmail.com",
+            "phone": "9090229090",
+            "uname": "deepak",
+            "id": "CAP1230",
+            "client": "Capgemini",
+            "project": "AIG",
+            "type": "Normal",
+            "creationdate": "01.01.2015",
+            "lastlogin": "01.01.2015",
+            "assigneddefects": "DEF121,DEF127",
+            "closeddefects": "DEF156,DEF178"
+        },
+        "mahendra": {
+            "name": "Mahendra kumar",
+            "email": "mahi@gmail.com",
+            "phone": "9030776666",
+            "uname": "mahendra",
+            "id": "AB1230",
+            "client": "TataElxsi",
+            "project": "App",
+            "type": "Normal",
+            "creationdate": "01.01.2015",
+            "lastlogin": "01.01.2015",
+            "assigneddefects": "DEF121,DEF127",
+            "closeddefects": "DEF156,DEF178"
+        } 
     },
-    "ramaguin": {
-        "name": "Ramananda Guin",
-        "email": "rama.guin@gmail.com",
-        "phone": "9030771092",
-        "uname": "ramaguin",
-        "pass": "rama"
+    "secure": {
+        "admin": {
+            "uname": "admin",
+            "pass": "admin"
+        },
+        "ramaguin": {
+            "uname": "ramaguin",
+            "pass": "rama"
+        },
+        "deepak": {
+            "uname": "deepak",
+            "pass": "deepak"
+        }
     },
-    "deepak": {
-        "name": "Deepak Jenamani",
-        "email": "dipu@gmail.com",
-        "phone": "9090229090",
-        "uname": "deepak",
-        "pass": "deepak"
+    "clients": {
+        "konylabs": {
+            "id": "KL001",
+            "name": "Kony Labs",
+            "listofprojects": "Viz,Studio"
+        },
+        "capgemini": {
+            "id": "CG002",
+            "name": "Capgemini",
+            "listofprojects": "AIG"
+        },
+        "TataElxsi": {
+            "id": "TL003",
+            "name": "Tata Elxsi",
+            "listofprojects": "Panasonic"
+        }
+    },
+    "projects": {
+        "viz": {
+            "id": "AMS001",
+            "name":"viz",
+            "client":"KonyLabs",
+            "dateofcreation":"01.01.2015", 
+            "resources":"20", 
+            "defects":"100",
+            "manager":"Giri Kadali",
+            "location":"Hyderabad"
+        },
+        "studio":{
+            "id": "AMS002",
+            "name":"Studio",
+            "client":"KonyLabs",
+            "dateofcreation":"01.01.2015", 
+            "resources":"30", 
+            "defects":"200",
+            "manager":"Rajendra K.",
+            "location":"Hyderabad"
+        },
+        "aig":{
+            "id": "AMS003",
+            "name":"AIG",
+            "client":"Capgemini",
+            "dateofcreation":"01.01.2015", 
+            "resources":"300", 
+            "defects":"100",
+            "manager":"Sundari",
+            "location":"Hyderabad"
+        },
+        "vieraconnect":{
+            "id": "AMS004",
+            "name":"Viera Connect",
+            "client":"Tata Elxsi",
+            "dateofcreation":"01.01.2015", 
+            "resources":"10", 
+            "defects":"100",
+            "manager":"Krishna Mohan",
+            "location":"Bangalore"
+        }
     }
 }
